@@ -1,9 +1,6 @@
 # Bonfire.Analytics
 
-A new bonfire extension created using [the generator](https://docs.bonfirenetworks.org/create-a-new-extension.html) 
-
-NOTE: update this readme when you create a new extension.
-
+Powered by https://github.com/lalabuy948/PhoenixAnalytics 
 
 ## Copyright and License
 
