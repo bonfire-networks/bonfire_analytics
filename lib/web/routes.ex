@@ -4,7 +4,7 @@ defmodule Bonfire.Analytics.Web.Routes do
   defmacro __using__(_) do
     quote do
       use PhoenixAnalytics.Web, :router
-      
+
       # pages anyone can view
       scope "/", Bonfire.UI.Me do
         pipe_through(:browser)
@@ -20,8 +20,6 @@ defmodule Bonfire.Analytics.Web.Routes do
       scope "/", Bonfire.Search.Web do
         pipe_through(:browser)
         pipe_through(:account_required)
-
-        
       end
 
       # pages you need to view as a user
@@ -35,7 +33,7 @@ defmodule Bonfire.Analytics.Web.Routes do
         pipe_through(:browser)
         pipe_through(:admin_required)
 
-        phoenix_analytics_dashboard "/admin/analytics"
+        phoenix_analytics_dashboard("/admin/analytics")
       end
     end
   end
