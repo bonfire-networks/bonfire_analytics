@@ -1,4 +1,4 @@
-defmodule Bonfire.ExtensionTemplate do
+defmodule Bonfire.Analytics do
   @moduledoc "./README.md" |> File.stream!() |> Enum.drop(1) |> Enum.join()
 
   use Bonfire.Common.Config
@@ -7,11 +7,11 @@ defmodule Bonfire.ExtensionTemplate do
   import Bonfire.Common.Modularity.DeclareHelpers
 
   declare_extension(
-    "Bonfire.ExtensionTemplate",
+    "Bonfire.Analytics",
     icon: "bi:app",
     description: l("An awesome extension")
     # default_nav: [
-    #   Bonfire.ExtensionTemplate.Web.HomeLive
+    #   Bonfire.Analytics.Web.HomeLive
     # ]
   )
 
